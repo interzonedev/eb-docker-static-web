@@ -1,5 +1,34 @@
 # eb-docker-static-web
 
+Demo Docker app for bundling a static website to be served by Nginx.
+
+Used example application from 
+[https://www.sitepoint.com/bundle-static-site-webpack](https://www.sitepoint.com/bundle-static-site-webpack)
+
+## NodeJS Commands
+
+To bundle the app:
+```
+npm run build
+```
+
+To clean the bundle:
+```
+npm run clean
+```
+
+To start a local server to host the app:
+```
+npm run server
+```
+
+Note:
+The `npm test`, `npm start`, `npm restart`, and `npm stop` commands are all aliases for `npm run xxx`.
+
+For all other scripts use `npm run xxx`.
+
+## Docker Commands
+
 To build via the Dockerfile:
 ```
 docker build -t boltgun69/eb-docker-static-web .

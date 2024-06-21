@@ -1,0 +1,25 @@
+{
+  "name": "eb-docker-static-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "webpack",
+    "server": "npx http-server",
+    "all": "npm run clean && npm run build && npm run server"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
